@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Team Dashboard</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body>
+	<header include="../common/nav.html"></header>
+
+	<main class="container">
+		<div class="m-3">
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="nav-item">
+					<a href="#eipcllinks" class="nav-link active" data-bs-toggle="tab">EIP CL Links</a>
+				</li>
+				<li class="nav-item">
+					<a href="#tncyclone" class="nav-link" data-bs-toggle="tab">TN/Cyclone</a>
+				</li>
+				<li class="nav-item">
+					<a href="#sharepointrtc" class="nav-link" data-bs-toggle="tab">Sharepoint and RTC</a>
+				</li>
+				<li class="nav-item">
+					<a href="#cw1" class="nav-link" data-bs-toggle="tab">CW1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#others" class="nav-link" data-bs-toggle="tab">Others</a>
+				</li>
+			</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="eipcllinks">
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>TRAINING</h4>
+										<a href="http://eip-dev1.prg-dc.dhl.com:15555"
+											class="list-group-item list group-item-action" target="_blank">IS</a>
+										<a href="http://eip-dev1.prg-dc.dhl.com:5984/_utils"
+											class="list-group-item list group-item-action" target="_blank">CouchDB</a>
+										<a href="http://eip-dev1.prg-dc.dhl.com:8585/"
+											class="list-group-item list group-item-action" target="_blank">MHR / NRA</a>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>STG</h4>
+										<a href="https://czcholstc003696.prg-dc.dhl.com:5210/TradeGuide/login/TradeGuide.jsp"
+											class="list-group-item list group-item-action" target="_blank">Trade
+											Guide</a>
+										<a href="https://eip-stg1-cl1.prg-dc.dhl.com:25554/"
+											class="list-group-item list group-item-action" target="_blank">IS - CL</a>
+										<a href="http://eip-stg1-std1.prg-dc.dhl.com:15555/"
+											class="list-group-item list group-item-action" target="_blank">IS - SL</a>
+										<a href="http://eip-stg1-cl1.prg-dc.dhl.com:5984/_utils"
+											class="list-group-item list group-item-action" target="_blank">CouchDB -
+											CL</a>
+
+										<a href="http://eip-stg1-std1.prg-dc.dhl.com:5984/_utils/#login"
+											class="list-group-item list group-item-action" target="_blank">CouchDB -
+											SL</a>
+										<a href="http://eip-stg1-std1.prg-dc.dhl.com:8585"
+											class="list-group-item list group-item-action" target="_blank">MHR / NRA</a>
+										<a href="https://eip-stg1-cl1.prg-dc.dhl.com:25554/WmRoot/service-test.dsp?service=submitDispatcher&interface=wemtan&doc=edit"
+											class="list-group-item list group-item-action" target="_blank">Test
+											Dispatcher -
+											STG</a>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>QA</h4>
+										<a href="https://czcholstc003697.prg-dc.dhl.com:5210/TradeGuide/login/TradeGuide.jsp"
+											class="list-group-item list group-item-action" target="_blank">Trade
+											Guide1</a>
+										<a href="https://czcholstc003699.prg-dc.dhl.com:5210/TradeGuide/login/TradeGuide.jsp"
+											class="list-group-item list group-item-action" target="_blank">Trade
+											Guide2</a>
+										<a href="https://eip-qa1-cl11.prg-dc.dhl.com:25554/"
+											class="list-group-item list group-item-action" target="_blank">IS1</a>
+										<a href="https://eip-qa1-cl12.prg-dc.dhl.com:25554/"
+											class="list-group-item list group-item-action" target="_blank">IS2</a>
+										<a href="http://eip-qa1-cl11.prg-dc.dhl.com:5984/_utils"
+											class="list-group-item list group-item-action" target="_blank">CouchDB1</a>
+										<a href="http://eip-qa1-cl12.prg-dc.dhl.com:5984/_utils"
+											class="list-group-item list group-item-action" target="_blank">CouchDB2</a>
+										<a href="https://ibq1-portal.dhl.com/"
+											class="list-group-item list group-item-action" target="_blank">MHR / NRA</a>
+										<a href="http://eip-qa1-cl11.prg-dc.dhl.com:15555/WmRoot/service-info.dsp?interface=jsi.resubmit&service=resubmitListOfSessions"
+											class="list-group-item list group-item-action" target="_blank">resubmit in
+											MHR</a>
+										<a href="http://eip-qa1-cl11.prg-dc.dhl.com:15555/WmRoot/service-test.dsp?service=testDispatch&interface=test&doc=edit"
+											class="list-group-item list group-item-action" target="_blank">Test
+											Dispatcher -
+											QA</a>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>PROD</h4>
+
+										<a href="https://eip-portal.dhl.com"
+											class="list-group-item list group-item-action" target="_blank">MHR / NRA</a>
+										<a href="http://ib-pr1-cl11.prg-dc.dhl.com:5984/_utils/"
+											class="list-group-item list group-item-action" target="_blank">CouchDB1</a>
+										<a href="http://ib-pr1-cl12.prg-dc.dhl.com:5984/_utils/"
+											class="list-group-item list group-item-action" target="_blank">CouchDB2</a>
+
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>DGFF NEW (EIP)</h4>
+
+											<a href="https://eip-qa1-cl11.prg-dc.dhl.com:8083/pages/public/login.xhtml"
+												class="list-group-item list group-item-action" target="_blank">QA1</a>
+											<a href="https://eip-qa1-cl12.prg-dc.dhl.com:8083/pages/public/login.xhtml"
+												class="list-group-item list group-item-action" target="_blank">QA2</a>
+											<a href="https://dgfffw-fwlui.dhl.com/pages/protected/index.xhtml "
+												class="list-group-item list group-item-action" target="_blank">PROD</a>
+									</div>
+
+
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>GENERAL</h4>
+
+										<a href="http://eip-pr1-bld11.prg-dc.dhl.com:15556/TradeGuide/"
+											class="list-group-item list group-item-action" target="_blank">EIP-CL TG
+											Tool</a>
+										<a href="https://eip-pr1-ss1.prg-dc.dhl.com:8143/EIPSelfService/"
+											class="list-group-item list group-item-action" target="_blank">EIP - Self
+											Service</a>
+										<a href="http://czchows6083.prg-dc.dhl.com:8003/qcbin/start_a.jsp"
+											class="list-group-item list group-item-action" target="_blank">EIP -
+											HPQC</a>
+										<a href="http://eip-pr1-bld12.prg-dc.dhl.com:15555/web/CVCM/login.do"
+											class="list-group-item list group-item-action" target="_blank">CrossVista -
+											EIP</a>
+										<a href="http://eip-stg1-std1.prg-dc.dhl.com:25554/invoke/IB_Xref_WS.cache:clearAllCaches?"
+											class="list-group-item list group-item-action" target="_blank">Clear Cache -
+											STG</a>
+										<a href="https://eip-qa1-cl11.prg-dc.dhl.com:25554/invoke/IB_Xref_WS.cache:clearAllCaches?"
+											class="list-group-item list group-item-action" target="_blank">Clear Cache -
+											QA1</a>
+										<a href="https://eip-qa1-cl12.prg-dc.dhl.com:25554/invoke/IB_Xref_WS.cache:clearAllCaches?"
+											class="list-group-item list group-item-action" target="_blank">Clear Cache -
+											QA2</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tncyclone">
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>TN/Cyclone</h4>
+
+										<a href="https://eip-qa-tn-portal.dhl.com/"
+											class="list-group-item list group-item-action" target="_blank">TN MWS -
+											UAT</a>
+										<a href="https://eip-tn-portal.dhl.com/"
+											class="list-group-item list group-item-action" target="_blank">TN MWS -
+											PROD</a>
+										<a href="https://cyclone-eu-dev-gui.dhl.com/ui/"
+											class="list-group-item list group-item-action" target="_blank">CYC -
+											UAT_GI1</a>
+										<!-- <a href="http://cyclone-uat2.prg-dc.dhl.com:8181/ui/" class="list-group-item list group-item-action" target="_blank">UAT_GI2</a> -->
+										<!-- <a href="http://czchols2618.prg-dc.dhl.com:8181/ui" class="list-group-item list group-item-action" target="_blank">UAT_GI3</a> -->
+										<!-- <a href="https://cyclone-eu-dev.dhl.com:443/rawshared/" class="list-group-item list group-item-action" target="_blank">RawPost/RawShared</a> -->
+										<a href="https://cyclone-eu-prod-gui.dhl.com/ui/"
+											class="list-group-item list group-item-action" target="_blank">CYC -
+											PROD_GI1</a>
+										<a href="http://czchols2464.prg-dc.dhl.com:8181/ui/"
+											class="list-group-item list group-item-action" target="_blank">CYC -
+											PROD_GI2</a>
+										<a href="https://dpdhl.sharepoint.com/sites/b2b_integration/PRG/Operation%20manuals/Forms/AllItems.aspx?id=%2Fsites%2Fb2b%5Fintegration%2FPRG%2FOperation%20manuals%2F%2D%2001%5FCYCLONE&viewid=4add6167%2D58e5%2D47a0%2Db293%2D791c098b8658"
+											class="list-group-item list group-item-action" target="_blank">Cylone - RTP
+											SharePoint</a>
+										<!-- <a href="http://czchols2464.prg-dc.dhl.com:8181/ui/" class="list-group-item list group-item-action" target="_blank">PROD_GI2_2464</a> -->
+										<!-- <a href="http://czchols2466.prg-dc.dhl.com:8181/ui/" class="list-group-item list group-item-action" target="_blank">PROD_GI2_2466</a> -->
+										<!-- <a href="https://cyclone3-eu-prod-gui.dhl.com/ui/" class="list-group-item list group-item-action" target="_blank">PROD_GI3</a> -->
+										<!-- <a href="https://isharenew.dhl.com/sites/b2b_integration/PRG/Operation%20manuals/Forms/AllItems.aspx?RootFolder=%2Fsites%2Fb2b%5Fintegration%2FPRG%2FOperation%20manuals%2F%2D%2001%5FCYCLONE%2F%2D%2001%5FGI1%5FSharedPartnerGateway" class="list-group-item list group-item-action" target="_blank">Cylone - RTP iShare</a> -->
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="sharepointrtc">
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>SharePoint</h4>
+
+										<a href="https://dpdhl.sharepoint.com/sites/CentralizedRepository/Shared%20Documents/Forms/AllItems.aspx"
+											class="list-group-item list group-item-action" target="_blank">EIP
+											SharePoint</a>
+										<a href="https://dpdhl.sharepoint.com/sites/dgfcfsusa/Project%20Documentation%20Repository/Forms/AllItems.aspx"
+											class="list-group-item list group-item-action" target="_blank">DGF CFS USA
+											Implementations</a>
+										<a href="https://dpdhl.sharepoint.com/sites/cisam"
+											class="list-group-item list group-item-action" target="_blank">CIS-AMIS
+											SharePoint</a>
+
+										<a href="https://dpdhl.sharepoint.com/sites/t9004/ProjectDocuments/Forms/AllItems.aspx"
+											class="list-group-item list group-item-action" target="_blank">T9004 (Old
+											iShare
+											site)</a>
+										<!-- <a href="https://dpdhl.sharepoint.com/sites/ibbfactory/CustomerLayer/TWP/Forms/AllItems.aspx" class="list-group-item list group-item-action" target="_blank">EIP CL - TWP</a> -->
+										<a href="https://dpdhl.sharepoint.com/sites/CISAM/Lists/2022%20B2B%20Americas%20Fast%20Track%20Scope%20Change%20Request/AllItems.aspx?viewpath=%2Fsites%2FCISAM%2FLists%2F2022%20B2B%20Americas%20Fast%20Track%20Scope%20Change%20Request%2FAllItems%2Easpx"
+											class="list-group-item list group-item-action" target="_blank">CIS-AMIS CR
+											iShare</a>
+										<a href="https://dpdhl.sharepoint.com/sites/CISAM/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCISAM%2FShared%20Documents%2FCIS%20Documents%20and%20Tools&viewid=cfc6f5d4%2D0a95%2D4c72%2D906a%2D70fe3078cc40"
+											class="list-group-item list group-item-action" target="_blank">CIS-AMIS
+											Documents and Tools</a>
+									</div>
+
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>RTC</h4>
+
+										<a href="https://rtc.prg-dc.dhl.com:9443/jazz/web/projects/Integration_Engagement_Portal&num;action=com.ibm.team.workitem.runSavedQuery&id=_SlOnwBPxEeSeMKUKh2lO4Q"
+											class="list-group-item list group-item-action" target="_blank">RTC DashBoard
+											-
+											Team Entries</a>
+										<a href="https://rtc.prg-dc.dhl.com:9443/jazz/web/projects/DGF%20Integration%20Platform&num;action=com.ibm.team.dashboard.viewDashboard"
+											class="list-group-item list group-item-action" target="_blank">RTC DashBoard
+											-
+											BuIT Entries</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="cw1">
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>CW1</h4>
+
+										<a href="https://citrix.dhl.com/Citrix/UniversalSSOWeb/"
+											class="list-group-item list group-item-action" target="_blank">Citrix
+											Login</a>
+
+										<a href="https://czchowstc002265.prg-dc.dhl.com:8080/index"
+											class="list-group-item list group-item-action" target="_blank">CW1 Support
+											Tool</a>
+										<a href="https://czchowstc002265.prg-dc.dhl.com:8080/tools"
+											class="list-group-item list group-item-action" target="_blank">CW1 Tools -
+											Message Checker</a>
+										<a href="http://eip-pr1-bld.prg-dc.dhl.com/repos/ib/trunk/IntegrationBackbone/Papermaps"
+											class="list-group-item list group-item-action" target="_blank">CW1
+											Papermaps</a>
+										<a href="https://servicenow.dhl.com/requestit/servicedesk_custom_form.do?sysparm_id=4458"
+											class="list-group-item list group-item-action" target="_blank">TAS AM form -
+											CW1
+											Test File Request</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="others">
+							<div class="row mt-5">
+								<div class="col-4">
+									<div class="list-group">
+										<h4>MISC</h4>
+
+										<a href="http://eip-stg1-std1.prg-dc.dhl.com:15555/IB_SM_SupportTools/"
+											class="list-group-item list group-item-action" target="_blank">IBB
+											Support Tools - STG</a>
+										<!-- <a href="http://eip-qa1-std21.prg-dc.dhl.com:15555/IB_SM_SupportTools/" class="list-group-item list group-item-action" target="_blank">IBB Support Tools - QA</a> -->
+										<a href="https://dpdhl.sharepoint.com/teams/CycloneAPIGatewayssupportteam?e=1%3A5d60943189eb4c46a3fc4384192115ed"
+											class="list-group-item list group-item-action" target="_blank">DSC
+											Integration
+											Dashboard</a>
+										<a href="http://eip-dev1.prg-dc.dhl.com:15555/Default/contents/glCC_DashBoard.dsp"
+											class="list-group-item list group-item-action" target="_blank">CC
+											Dashboard</a>
+										<a href="https://git.dhl.com/DCG-NTS-1468"
+											class="list-group-item list group-item-action" target="_blank">git</a>
+										<a href="https://ucd.prg-dc.dhl.com:8443/"
+											class="list-group-item list group-item-action" target="_blank">UCD</a>
+										<a href="https://servicenow.dhl.com/navpage.do"
+											class="list-group-item list group-item-action" target="_blank">GSN</a>
+										<a href="https://czchols4030.prg-dc.dhl.com/rfcbooking/"
+											class="list-group-item list group-item-action" target="_blank">RFC Booking
+											Tool</a>
+										<a href="https://www.freeformatter.com/xpath-tester.html"
+											class="list-group-item list group-item-action" target="_blank">XPATH
+											Tester</a>
+
+										<a href="https://myportalplus.prg-dc.dhl.com:8406"
+											class="list-group-item list group-item-action" target="_blank">SAP
+											myportal</a>
+										<!-- <a href="https://ap.benefitsasia.com/DHLITSMY" class="list-group-item list group-item-action" target="_blank">BenefitsAsia (Flexi)</a> -->
+										<a href="https://ssl2.perquisite.net/RewardCentre/M/Login?eid=654eee04-e0fe-47f8-b009-66660a5ea141"
+											class="list-group-item list group-item-action" target="_blank">Darwin</a>
+										<a href="https://www.peoplepay.asia/login/"
+											class="list-group-item list group-item-action" target="_blank">Payroll</a>
+									</div>
+
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>Invoice Tools</h4>
+
+										<a href="http://usqasws4032.phx-dc.dhl.com:7080/#/home"
+											class="list-group-item list group-item-action" target="_blank">NILB -
+											UAT</a>
+										<a href="https://nilb.dhl.com/#/login?returnUrl=%2Fhome"
+											class="list-group-item list group-item-action" target="_blank">NILB -
+											PROD</a>
+
+										<a href="https://frpprojects.frp-analytics.dhl.com/sense/app/27c60cc9-a6d0-4eb6-9e0a-427d17fb87c4?qlikTicket=Kfyb5g-Sm4jH7NAJ"
+											class="list-group-item list group-item-action" target="_blank">IIV - UAT</a>
+										<a href="https://frp-analytics.dhl.com/sense/app/c5ab7ebb-b8df-4872-9662-16584eea7c8c/overview"
+											class="list-group-item list group-item-action" target="_blank">IIV -
+											PROD</a>
+
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="list-group">
+										<h4>Wiki</h4>
+
+										<a href="http://dcgwiki.prg-dc.dhl.com/EGAccess"
+											class="list-group-item list group-item-action" target="_blank">Wiki -
+											NTS/TS</a>
+										<a href="http://ib-wiki.prg-dc.dhl.com/trac/wiki"
+											class="list-group-item list group-item-action" target="_blank">Wiki -
+											EIP</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	</main>
+
+
+
+	<script src="../scripts/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+	<script>
+		includeHTML();
+	</script>
+</body>
+
+</html>
