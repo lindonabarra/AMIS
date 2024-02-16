@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=itRepice-width, initial-scale=1.0">
+    <title>New Projects Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="d-flex justify-content-center">Create New Project Quote</h1>
+
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="nav-item">
+                <a href="#projectOverview" class="nav-link active" data-bs-toggle="tab">Project Overview</a>
+            </li>
+            <li class="nav-item">
+                <a href="#requestDetails" class="nav-link" data-bs-toggle="tab">Request Details</a>
+            </li>
+            <li class="nav-item">
+                <a href="#summary" class="nav-link" data-bs-toggle="tab">Summary</a>
+            </li>
+        </ul>
+
+
+        <form>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="projectOverview">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="mt-5">IT Services Representative</h2>
+                            <label for="itRepName" class="form-label">Name</label>
+                            <input type="text" name="itRepName" id="itRepName" class="form-control">
+                            <label for="itRepEmail" class="form-label">Email</label>
+                            <input type="text" name="itRepEmail" id="itRepEmail" class="form-control">
+
+                            <h2 class="mt-5">Business Partner Representative</h2>
+                            <label for="buitName" class="form-label">Name</label>
+                            <input type="text" name="buitName" id="buitName" class="form-control">
+                            <label for="buitEmail" class="form-label">Email</label>
+                            <input type="text" name="buitEmail" id="buitEmail" class="form-control">
+
+                            <h2 class="mt-5">Resource</h2>
+                            <label for="devName" class="form-label">CIS Developer</label>
+                            <input type="text" name="devName" id="devName" class="form-control">
+                            <label for="devEmail" class="form-label">Email</label>
+                            <input type="text" name="devEmail" id="devEmail" class="form-control">
+
+                            <h2 class="mt-5">Order Details</h2>
+                            <label for="crestCode" class="form-label">Crest Code</label>
+                            <select name="crestCode" id="crestCode" class="form-select">
+                                <option value="1">US - MUS413</option>
+                                <option value="8">CL - MCL410</option>
+                                <option value="2">HK - HKM220</option>
+                                <option value="3">CO - MCO410</option>
+                                <option value="4">AR - MAR410</option>
+                                <option value="5">PE - MPE410</option>
+                                <option value="6">BR - BR0220</option>
+                                <option value="7">CR - CR1120</option>
+                                <option value="9">CA - MCA410</option>
+                                <option value="10">MX - MMX410</option>
+                                <option value="11">PA - PA0520</option>
+                                <option value="12">GT - GT0320</option>
+                                <option value="13">SV - SV0220</option>
+                                <option value="14">HN - HN0320</option>
+                                <option value="15">NI - NI0220</option>
+                                <option value="16">SAMEDAY - DUSX03</option>
+                            </select>
+                            <label for="comments" class="form-label">Comments</label>
+                            <textarea name="devEmail" id="devEmail" class="form-control" rows="5"></textarea>
+                        </div>
+
+                        <div class="col">
+                            <h2 class="mt-5">Request Details</h2>
+                            <label for="requestReceivedDate" class="form-label">Request Received Date</label>
+                            <input type="date" name="requestReceivedDate" id="requestReceivedDate" class="form-control">
+
+                            <label for="region" class="form-label">Region</label>
+                            <select name="region" id="region" class="form-select">
+                                <option value="1">AMIS</option>
+                                <option value="2">APIS</option>
+                                <option value="3">EMEA</option>
+                            </select>
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" name="country" id="country" class="form-control">
+
+                            <label for="businessUnit" class="form-label">Business Unit</label>
+                            <select name="businessUnit" id="businessUnit" class="form-select">
+                                <option value="1">DGF</option>
+                                <option value="2">ISC</option>
+                                <option value="3">DSC</option>
+                                <option value="4">Express</option>
+                            </select>
+
+                            <label for="requestID" class="form-label">Request ID</label>
+                            <input type="text" name="requestID" id="requestID" class="form-control">
+
+                            <label for="requestID" class="form-label">Request ID</label>
+                            <input type="text" name="requestID" id="requestID" class="form-control">
+
+                            <label for="rtcNumber" class="form-label">RTC Number</label>
+                            <input type="text" name="rtcNumber" id="rtcNumber" class="form-control">
+
+                            <label for="customerName" class="form-label">Customer Name</label>
+                            <input type="text" name="customerName" id="customerName" class="form-control">
+
+                            <label for="projectDescription" class="form-label">Project Description</label>
+                            <input type="text" name="projectDescription" id="projectDescription" class="form-control">
+
+                            <label for="inScope" class="form-label">In Scope</label>
+                            <textarea name="inScope" id="inScope" class="form-control" rows="10"></textarea>
+
+                            <label for="outOfScope" class="form-label">Out of Scope</label>
+                            <textarea name="outOfScope" id="outOfScope" class="form-control"
+                                rows="2">Any other item not listed as In Scope</textarea>
+
+                            <label for="assumptions" class="form-label">Assumptions</label>
+                            <textarea name="assumptions" id="assumptions" class="form-control"
+                                rows="2">All teams involved in this project would need to approve UAT and RTP</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="requestDetails">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="mt-5">Message</h2>
+                            <label for="messageDescription" class="form-label">Message Description</label>
+                            <input type="text" name="messageDescription" id="messageDescription" class="form-control">
+
+                            <label for="messageType" class="form-label">Message Type</label>
+                            <select name="messageType" id="messageType" class="form-select">
+                                <option value="1">Type 1</option>
+                                <option value="2">Type 2</option>
+                                <option value="3">Type 3</option>
+                                <option value="4">Type 4</option>
+                            </select>
+
+                            <label for="messageDirection" class="form-label">Message Direction</label>
+                            <select name="messageDirection" id="messageDirection" class="form-select">
+                                <option value="1">Inbound</option>
+                                <option value="2">Outbound</option>
+                            </select>
+
+                            <label for="messageUATHours" class="form-label">UAT Hours</label>
+                            <input type="number" name="messageUATHours" id="messageUATHours" class="form-control">
+
+                            <div class="d-flex flex-row-reverse mt-2">
+                                <button type="buton" class="btn btn-primary">Add Message</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h2 class="mt-5">Additional Charges</h2>
+                            <label for="additionalChargeHours" class="form-label">Additional Hours</label>
+                            <input type="number" name="additionalChargeHours" id="additionalChargeHours"
+                                class="form-control">
+
+                            <label for="additionalChargeDescription" class="form-label">Charge Description</label>
+                            <input type="text" name="additionalChargeDescription" id="additionalChargeDescription"
+                                class="form-control">
+
+                            <div class="d-flex flex-row-reverse mt-2">
+                                <button type="buton" class="btn btn-primary">Add Charges</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="summary">
+                    <div class="row">
+                        <div class="col-md-4 order-md-2 mb-4 mt-5">
+                            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-muted">Totals</span>
+                                <span class="badge badge-secondary badge-pill">3</span>
+                            </h4>
+                            <ul class="list-group mb-3">
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">Build Resource Total</h6>
+                                        <small class="text-muted">Consulting and additional charges</small>
+                                    </div>
+                                    <span class="text-muted">€2,164.52</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">One Off</h6>
+                                        <small class="text-muted">One off message charges</small>
+                                    </div>
+                                    <span class="text-muted">€460.00</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>Total (EUR)</span>
+                                    <strong>€2,624.52</strong>
+                                </li>
+                                <div class="d-flex flex-row-reverse mt-5">
+                                    <button type="submit" class="btn btn-success">Create Quote</button>
+                                </div>
+                        </div>
+
+
+                        <div class="col-md-8 order-md-1">
+                            <h1 class="mt-5">Build Resources - Details</h1>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Stage/Phase</th>
+                                        <th>Activity Description</th>
+                                        <th>Role/Grade</th>
+                                        <th>Unit Price(€)</th>
+                                        <th>Total MNDs</th>
+                                        <th>Total(€)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Consulting</td>
+                                        <td>BSA Activities – Outbound DGFFW X212 310 to Newell</td>
+                                        <td>SW Engineer CBJ</td>
+                                        <td>309.00</td>
+                                        <td>2</td>
+                                        <td>619.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software Development</td>
+                                        <td>Change Requests</td>
+                                        <td>SW Engineer CBJ</td>
+                                        <td>309.00</td>
+                                        <td>1</td>
+                                        <td>309.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software Development</td>
+                                        <td>UAT Support</td>
+                                        <td>SW Engineer CBJ</td>
+                                        <td>309.00</td>
+                                        <td>4</td>
+                                        <td>1,236.00</td>
+                                    </tr>
+                                    <tr class="table-secondary">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><strong>Build Resources Total</strong></td>
+                                        <td>11.825</td>
+                                        <td>2,164.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h1 class="mt-5">One Off</h1>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Total(€)</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Type 1 - Outbound DGFFW X212 310 to Newell</td>
+                                        <td>460.00</td>
+                                    </tr>
+                                    <tr class="table-secondary">
+                                        <td class="text-end"><strong>Build One Off Total</strong></td>
+                                        <td>460.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
